@@ -30,9 +30,9 @@ export function middleware(request: NextRequest) {
     "script-src 'self' 'nonce-" +
       nonce +
       "' https://cdn.moengage.com/ https://app-cdn.moengage.com/ https://*.moengage.com",
-    "connect-src 'self' https://cdn.moengage.com/ https://app-cdn.moengage.com/ https://*.moengage.com",
-    "img-src 'self' data: https: blob: https://cdn.moengage.com/ https://app-cdn.moengage.com/ https://*.moengage.com https://image.moengage.com/ https://moe-email-campaigns.s3.amazonaws.com/",
-    "style-src 'self' https://*.moengage.com https://fonts.bunny.net",
+    "connect-src 'self' https://cdn.moengage.com/ https://app-cdn.moengage.com/ https://*.moengage.com https://us.i.posthog.com https://app.posthog.com https://eu.i.posthog.com wss://us.i.posthog.com wss://eu.i.posthog.com",
+    "img-src 'self' data: https: blob: https://cdn.moengage.com/ https://app-cdn.moengage.com/ https://*.moengage.com https://image.moengage.com/ https://moe-email-campaigns.s3.amazonaws.com/ https://us.i.posthog.com https://app.posthog.com https://eu.i.posthog.com",
+    "style-src 'self' 'unsafe-inline' 'unsafe-hashes' https://*.moengage.com https://fonts.bunny.net",
     "font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.moengage.com",
     "frame-src 'self' https://*.moengage.com",
   ].join("; ");
