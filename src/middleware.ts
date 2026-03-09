@@ -32,7 +32,7 @@ export function middleware(request: NextRequest) {
       "' https://cdn.moengage.com/ https://app-cdn.moengage.com/ https://*.moengage.com",
     "connect-src 'self' https://cdn.moengage.com/ https://app-cdn.moengage.com/ https://*.moengage.com",
     "img-src 'self' data: https: blob: https://cdn.moengage.com/ https://app-cdn.moengage.com/ https://*.moengage.com https://image.moengage.com/ https://moe-email-campaigns.s3.amazonaws.com/",
-    "style-src 'self' 'unsafe-inline' https://*.moengage.com https://fonts.bunny.net",
+    "style-src 'self' https://*.moengage.com https://fonts.bunny.net",
     "font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://*.moengage.com",
     "frame-src 'self' https://*.moengage.com",
   ].join("; ");
